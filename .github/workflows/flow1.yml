@@ -20,6 +20,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Running
+      - name: List the current folder
+        run: ls -a
       - run: |
           ls ${{github.workspace}}
       - run: echo "${{job.status}}"
